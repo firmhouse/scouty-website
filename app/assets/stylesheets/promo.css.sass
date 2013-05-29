@@ -1,0 +1,75 @@
+// Place all the styles related to the promo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "foundation"
+
+.container
+  @include grid-row
+
+h1
+  span
+    font-size: .7em
+    font-weight: 100
+
+.hero
+  @include grid-column($columns: 12, $float: left)
+  height: 400px
+  overflow: hidden
+  background: #2C323E
+  .explanation
+    @include grid-column($columns: 8, $float: left, $offset: 1)
+    margin-bottom: 40px
+    margin-top: 120px
+    padding: 1em
+
+    h1
+      color: white
+
+    h2
+      color: white
+      font-size: 1.5em
+      font-weight: 300
+    p
+      color: white
+      font-size: 1.2em
+      font-weight: 100
+
+  .images
+    @include grid-column($columns: 3, $float: left)
+
+    .image
+      @include clearfix
+      margin: 0 auto
+
+  .app-icon
+    @include grid-column($columns: 2, $float: left, $offset: 3)
+    position: absolute
+    top: 440px
+    margin-bottom: 40px
+
+.body
+  @include grid-column($columns: 12, $float: left)
+  .info
+    @include grid-column($columns: 4, $float: left)
+    margin: 60px 0px
+
+.support
+  @include clearfix
+  @include grid-column($columns: 12, $float: left)
+  background: #2C323E
+  text-align: center
+  h1
+    color: white
+    font-size: 1.5em
+    margin: 50px 0px
+    span
+      font-weight: 400
+      font-size: .9em
+
+.contact
+  @include grid-column($columns: 12, $float: left)
+  background: #fcfcfc
+  text-align: center
+  p
+    margin: 40px 0px
